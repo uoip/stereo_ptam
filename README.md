@@ -1,6 +1,6 @@
 # stereo_ptam
 
-This is a complete python implementation of Stereo PTAM, based on C++ project [lrse](https://github.com/lrse)/[sptam](https://github.com/lrse/sptam) and paper "[S-PTAM: Stereo Parallel Tracking and Mapping](http://webdiis.unizar.es/~jcivera/papers/pire_etal_ras17.pdf)  Taihu Pire et al. RAS17", with some modifications.   
+This is a complete python implementation of Stereo PTAM, based on C++ project [lrse/sptam](https://github.com/lrse/sptam) and paper "[S-PTAM: Stereo Parallel Tracking and Mapping](http://webdiis.unizar.es/~jcivera/papers/pire_etal_ras17.pdf)  Taihu Pire et al. RAS17", with some modifications.   
 
 > S-PTAM is a Stereo SLAM system able to compute the camera trajectory in real-time. It heavily exploits the parallel nature of the SLAM problem, separating the time-constrained pose estimation from less pressing matters such as map building and refinement tasks. On the other hand, the stereo setting allows to reconstruct a metric 3D map for each frame of stereo images, improving the accuracy of the mapping process with respect to monocular SLAM and avoiding the well-known bootstrapping problem. Also, the real scale of the environment is an essential feature for robots which have to interact with their surrounding workspace.   
 
@@ -42,7 +42,7 @@ As shown below, all loops have been closed (loop points are marked in black).
 
 
 ### TODO:
-Exhaustive evaluation on datasets. (There seems to be a python package [MichaelGrupp/evo](https://github.com/MichaelGrupp/evo) written for odometry/SLAM algorithm evaluation)
+Exhaustive evaluation on datasets. (There seems to be a python package [MichaelGrupp/evo](https://github.com/MichaelGrupp/evo) for odometry/SLAM algorithm evaluation)
 
 ## License
 This python reimplementation is largely based on [sptam](https://github.com/lrse/sptam), so it's licensed under GPLv3 License. 
