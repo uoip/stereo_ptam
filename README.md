@@ -1,6 +1,6 @@
 # stereo_ptam
 
-This is a complete python implementation of Stereo PTAM, based on C++ project [lrse/sptam](https://github.com/lrse/sptam) and paper "[S-PTAM: Stereo Parallel Tracking and Mapping](http://webdiis.unizar.es/~jcivera/papers/pire_etal_ras17.pdf)  Taihu Pire et al. RAS17", with some modifications.   
+This python project is a complete implementation of Stereo PTAM, based on C++ project [lrse/sptam](https://github.com/lrse/sptam) and paper "[S-PTAM: Stereo Parallel Tracking and Mapping](http://webdiis.unizar.es/~jcivera/papers/pire_etal_ras17.pdf) Taihu Pire et al. RAS17", with some modifications.   
 
 > S-PTAM is a Stereo SLAM system able to compute the camera trajectory in real-time. It heavily exploits the parallel nature of the SLAM problem, separating the time-constrained pose estimation from less pressing matters such as map building and refinement tasks. On the other hand, the stereo setting allows to reconstruct a metric 3D map for each frame of stereo images, improving the accuracy of the mapping process with respect to monocular SLAM and avoiding the well-known bootstrapping problem. Also, the real scale of the environment is an essential feature for robots which have to interact with their surrounding workspace.   
 
@@ -11,12 +11,12 @@ As stated in the [S-PTAM paper](http://webdiis.unizar.es/~jcivera/papers/pire_et
 
 
 ## Features 
-(of this python implementation)
+(of this implementation)
 * Multithreads Tracking, Mapping, and Loop Closing;
 * Covisibility Graph (representing the relation between keyframes, mappoints and measurements);
 * Local Bundle Adjustment and Pose Graph Optimization;
 * Motion Model (used for pose prediction, then for reliable feature matching);
-* Point Clouds and graph visualization;
+* Point Clouds and Graph visualization;
 * Data loader for datasets [KITTI Odometry](http://www.cvlibs.net/datasets/kitti/eval_odometry.php) and [EuRoC MAV](http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets);
 * Reasonable speed: ~50ms per frame on EuRoC, and ~70ms per frame on KITTI.
 
@@ -33,7 +33,7 @@ or
 `python sptam.py --dataset euroc --path path/to/your/EuRoC_MAV_dataset/MH_01_easy`
 
 ## Results
-Visual results on KITTI odometry sequence 00:   
+Visual results (screenshots from my experiment) on KITTI odometry sequence 00:   
 * graph:  
 As shown below, all loops have been closed (loop points are marked in black).   
 ![](imgs/pose_graph.png)   
